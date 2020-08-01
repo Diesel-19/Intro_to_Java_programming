@@ -11,6 +11,5 @@ public class Chapter02_Learning08 {
 		double n = 10.2;
 		m = (int) n;
 		System.out.println(n);
-		
 	}
 }
