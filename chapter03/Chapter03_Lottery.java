@@ -19,7 +19,7 @@ public class Chapter03_Lottery {
 		
 		if (guess == lottery) {
 			System.out.println("You won €10.000");
-		} else if ((guessDigit1 == lotteryDigit1 && guessDigit2 == lotteryDigit2) || (guessDigit1 == lotteryDigit2 && guessDigit2 == lotteryDigit1)) {
+		} else if ((guessDigit1 == lotteryDigit2 && guessDigit2 == lotteryDigit1)) {
 			System.out.println("You won €3.000");
 		} else if (guessDigit1 == lotteryDigit1 || guessDigit1 == lotteryDigit2 || guessDigit2 ==lotteryDigit1 || guessDigit2 == lotteryDigit2) {
 			System.out.println("You won €1.000");
