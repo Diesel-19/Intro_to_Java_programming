@@ -17,7 +17,7 @@ public class Chapter04_Lottery {
 		char lotteryDigit2 = lottery.charAt(1);
 		
 		
-		if (guess == lottery) {
+		if (guess.equals(lottery)) {
 			System.out.println("You won €10.000");
 		} else if ((guessDigit1 == lotteryDigit2 && guessDigit2 == lotteryDigit1)) {
 			System.out.println("You won €3.000");
