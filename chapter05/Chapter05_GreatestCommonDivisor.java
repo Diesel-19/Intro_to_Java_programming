@@ -22,7 +22,7 @@ public class Chapter05_GreatestCommonDivisor {
 			k++;
 		}
 
-		System.out.println(gcd);
+		System.out.println("The greatest common divisor of " + n1 + " and " + n2 + " is " + gcd);
 	}
 
 }
