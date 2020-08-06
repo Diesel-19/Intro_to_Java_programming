@@ -6,6 +6,7 @@ public class Exercise04_13 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
+		System.out.println("Enter a letter: ");
 		String str = input.next();
 		char ch = str.charAt(0);
 		
