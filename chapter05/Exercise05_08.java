@@ -8,15 +8,15 @@ public class Exercise05_08 {
 		double point = 0;
 		double temp = point;
 		String comb = "";
+		
+		System.out.println("Enter the amount point(-1 to end) and the name of the student");
 		while (true) {
-			System.out.println("Enter the amount point(-1 to end): ");
+			
 			point = input.nextDouble();
 			if (point == -1) {
 				break;
 			}
-			System.out.println("Enter name of the student: ");
 			String name = input.nextLine();
-			name = input.nextLine();
 
 			if (point > temp) {
 				temp = point;
