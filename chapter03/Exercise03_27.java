@@ -12,8 +12,8 @@ public class Exercise03_27 {
 
 		if ((200 - x) / 200 < (y / 100) || x > 200 || y > 100) {
 			System.out.println("The point isn't in the triangle");
-		} else if (x <= 0 || y <= 0) {
-			System.out.println("Please enter positive numbers");
+		} else if (x < 0 || y < 0) {
+			System.out.println("Please enter positive numbers or 0");
 		} else {
 			System.out.println("The point is in the triangle");
 		}
