@@ -11,22 +11,30 @@ public class Exercise05_09 {
 		String name = "";
 		String nameFirst = "";
 		String nameSecond = "";
-		
-		System.out.println("Enter the amount point(-1 to end) and the name of the student");
-		while (point != -1) {
+
+		System.out.println("Enter the amount of students, amount point and the name of the student");
+		int noOfStudent = input.nextInt();
+		while (noOfStudent > 0) {
 
 			point = input.nextDouble();
 			name = input.nextLine();
 
-			if (point > first) {
-				first = point;
-				nameFirst = name;
-			}
-			if (first > point && point > second ) {
+			if (point > second) {
+
+				if (point > first) {
+					second = first;
+					nameSecond = nameFirst;
+					first = point;
+					nameFirst = name;
+				} else {
+					second = point;
+					nameSecond = name;
+				}
 				second = point;
 				nameSecond = name;
 			}
 
+			noOfStudent--;
 		}
 		System.out.println(first + " " + nameFirst);
 		System.out.println(second + " " + nameSecond);
