@@ -9,13 +9,13 @@ public class Exercise05_44 {
 		System.out.println("Enter a short decimal integer: ");
 		short decimal = input.nextShort();
 
-		String binary = "";
-		while (decimal != 0) {
-			binary = (decimal % 2) + binary;
-			decimal = (short) (decimal / 2);
-		}
-		System.out.printf(binary);
+		String str = "";
+
 		for (int i = 0; i < 16; i++) {
+			str = (decimal & 1) + str;
+			decimal >>= 1;
 		}
+
+		System.out.println(str);
 	}
 }
