@@ -1,6 +1,6 @@
 package chapter07;
 
-public class Chapter07_Learning01 {
+public class Chapter07_01 {
 	public static void main(String[] args) {
 		double[] a = new double[10];
 		a[9] = 5.5;
