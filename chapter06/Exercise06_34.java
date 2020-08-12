@@ -3,7 +3,6 @@ package chapter06;
 import java.util.Scanner;
 
 public class Exercise06_34 {
-	/** Main method */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 

@@ -13,9 +13,10 @@ public class Exercise06_22 {
 
 	public static double sqrt(long n) {
 		double lastGuess = 1;
-		double nextGuess = 0;
-		while (Math.abs(nextGuess - lastGuess) > 0.0001) {
-			double temp = nextGuess;
+		double nextGuess = 1;
+		double temp;
+		while (Math.abs(nextGuess - lastGuess) > 0.0001 || nextGuess - lastGuess == 0) {
+			temp = nextGuess;
 			nextGuess = (lastGuess + n / lastGuess) / 2;
 			lastGuess = temp;
 		}
