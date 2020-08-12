@@ -32,7 +32,7 @@ public class Exercise07_05 {
 					break;
 				}
 			}
-			if (isEqual != false) {
+			if (isEqual) {
 				count++;
 			}
 
@@ -48,12 +48,10 @@ public class Exercise07_05 {
 			boolean isEqual = false;
 			for (int j = 0; j < numbers.length; j++) {
 				if (numbers[i] == numbers[j] && i != j) {
-					if (j < i) {
-						isEqual = true;
-						break;
-					}
 					isEqual = true;
-					if (i < j) {
+					if (j < i) {
+						break;
+					} else {
 						distinctNumbers[index] = numbers[i];
 						index++;
 						break;
