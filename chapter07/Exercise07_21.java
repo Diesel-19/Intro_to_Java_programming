@@ -10,16 +10,26 @@ public class Exercise07_21 {
 		int ballCount = input.nextInt();
 		System.out.println("Enter the number of slots in the bean machine: ");
 		int slotCount = input.nextInt();
-
 		int[] slot = randomPath(slotCount, ballCount);
+
+		System.out.println();
 		printPositions(slot);
+		for (int i = 0; i < slot.length; i++) {
+			System.out.print("-");
+		}
 	}
 
 	public static void printPositions(int[] slot) {
 		int max = getMax(slot);
-		for (int i = 0; i < slot.length; i++) {
-			int emptySpace = max - slot[i];
-			
+		for (int j = max; j > 0; j--) {
+			for (int i = 0; i < slot.length; i++) {
+				if (slot[i] < j) {
+					System.out.print(" ");
+				} else {
+					System.out.print("0");
+				}
+			}
+			System.out.println();
 		}
 	}
 

@@ -25,7 +25,7 @@ public class Exercise07_31 {
 	}
 
 	public static int[] merge(int[] list1, int[] list2) {
-		int[] merge;
+		int[] merge = { 1, 2 };
 
 		return merge;
 	}

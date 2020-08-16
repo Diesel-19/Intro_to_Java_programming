@@ -7,15 +7,23 @@ public class Exercise07_06 {
 		primeNumbers[1] = 3;
 		int index = 2;
 		for (int i = 5; primeNumbers[49] == 0; i++) {
-			for (int j = 2; j < 49 && index < 50 && primeNumbers[j] != 0 && Math.sqrt(i) >= primeNumbers[j]
-					&& i % primeNumbers[j] == 0; j++) {
+			boolean isDivisible = false;
+			for (int j = 0; j < index && index < 50 && Math.sqrt(i) >= primeNumbers[j]; j++) {
 
-				if (i % primeNumbers[j] != 0 && primeNumbers[j + 1] == 0) {
-					primeNumbers[index] = i;
-					index++;
+				if (i % primeNumbers[j] == 0) {
+					isDivisible = true;
 				}
 			}
+			if (!isDivisible) {
+				primeNumbers[index] = i;
+				index++;
+			}
 		}
+		printPrimeNumbers(primeNumbers);
+
+	}
+
+	public static void printPrimeNumbers(int[] primeNumbers) {
 		int count = 0;
 		for (int i : primeNumbers) {
 			System.out.print(i + " ");
@@ -24,6 +32,5 @@ public class Exercise07_06 {
 				System.out.println();
 			}
 		}
-
 	}
 }
