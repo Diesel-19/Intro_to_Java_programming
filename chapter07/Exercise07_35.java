@@ -4,10 +4,18 @@ import java.util.Scanner;
 
 public class Exercise07_35 {
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 		String word = getWord();
-
-		play(word);
-
+		boolean continueGame;
+		do {
+			play(word);
+			System.out.println("Do you want to guess another word?");
+			if (input.next().toUpperCase().equals("YES")) {
+				continueGame = true;
+			} else {
+				continueGame = false;
+			}
+		} while (continueGame);
 	}
 
 	public static void play(String word) {
