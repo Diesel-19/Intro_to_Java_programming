@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Exercise08_05 {
 
 	public static void main(String[] args) {
-		
 		int n = 3;
 		double[][] matrix1 = new double[n][n];
 		double[][] matrix2 = new double[n][n];

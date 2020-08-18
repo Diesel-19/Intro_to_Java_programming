@@ -2,7 +2,7 @@ package chapter08;
 
 import java.util.Scanner;
 
-public class Chapter08_CheckSudokuSolution { 
+public class Chapter08_CheckSudokuSolution {
   public static void main(String[] args) {
     // Read a Sudoku solution
     int[][] grid = readASolution();
