@@ -50,7 +50,7 @@ public class Exercise08_09 {
 				draw = true;
 				break;
 			}
-			// get input from user x
+			// get input from user y
 			do {
 				validInput = true;
 				System.out.println("Enter a row (0, 1, 2) for player Y:");
@@ -130,9 +130,9 @@ public class Exercise08_09 {
 					test = false;
 				}
 			}
-		}
-		if (test) {
-			return true;
+			if (test) {
+				return true;
+			}
 		}
 		// test columns
 		test = true;
@@ -143,10 +143,11 @@ public class Exercise08_09 {
 					test = false;
 				}
 			}
+			if (test) {
+				return true;
+			}
 		}
-		if (test) {
-			return true;
-		}
+
 		// test major diagonal
 		test = true;
 		for (int i = 0; i < game.length; i++) {
