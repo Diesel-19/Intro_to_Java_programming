@@ -18,14 +18,19 @@ public class Exercise08_03 {
 		int[][] studentPoints = new int[answers.length][2];
 
 		for (int i = 0; i < answers.length; i++) {
-			int correctCount = 0;
 			for (int j = 0; j < answers[i].length; j++) {
-				if (answers[i][j] == keys[j])
-					correctCount++;
+				if (answers[i][j] == keys[j]) {
+					studentPoints[i][0] = i;
+					studentPoints[i][1]++;
+				}
 			}
-			studentPoints[i][1] = correctCount;
-			studentPoints[i][0] = i;
 		}
-		//TODO: sort students' points
+		sort(studentPoints);
+	}
+
+	public static void sort(int[][] studentPoints) {
+		for (int i = 0; i < studentPoints.length; i++) {
+			
+		}
 	}
 }

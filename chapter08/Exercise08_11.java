@@ -8,7 +8,21 @@ public class Exercise08_11 {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a number between 0 and 511");
 		int number = input.nextInt();
-		number *= 10;
-		
+
+		String str = "";
+		for (int i = 0; i < 9; i++) {
+			str = (number & 1) + str;
+			number >>= 1;
+		}
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix.length; j++) {
+				if (str.charAt(i * 3 + j) == '0') {
+					System.out.print("H ");
+				} else {
+					System.out.print("T ");
+				}
+			}
+			System.out.println();
+		}
 	}
 }
