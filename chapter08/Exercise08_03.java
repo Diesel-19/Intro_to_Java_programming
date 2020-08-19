@@ -26,11 +26,32 @@ public class Exercise08_03 {
 			}
 		}
 		sort(studentPoints);
+		for (int i = 0; i < studentPoints.length; i++) {
+			for (int j = 0; j < studentPoints[0].length; j++) {
+				System.out.print(studentPoints[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	public static void sort(int[][] studentPoints) {
-		for (int i = 0; i < studentPoints.length; i++) {
-			
+		int[] temp = new int[2];
+		for (int i = 0; i < studentPoints.length - 1; i++) {
+			int min = studentPoints[i][1];
+			int minIndex = i;
+			for (int j = i + 1; j < studentPoints.length; j++) {
+				if (studentPoints[j][1] < min) {
+					min = studentPoints[j][1];
+					minIndex = j;
+				}
+			}
+			if (minIndex != i) {
+				for (int j = 0; j < temp.length; j++) {
+					temp[j] = studentPoints[minIndex][j];
+					studentPoints[minIndex][j] = studentPoints[i][j];
+					studentPoints[i][j] = temp[j];
+				}
+			}
 		}
 	}
 }
