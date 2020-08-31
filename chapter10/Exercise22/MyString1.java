@@ -1,14 +1,13 @@
 package chapter10.Exercise22;
 
+import java.util.Arrays;
+
 public class MyString1 {
 
 	private char[] chars;
 
 	public MyString1(char[] chars) {
-		this.chars = new char[chars.length];
-		for (int i = 0; i < chars.length; i++) {
-			this.chars[i] = chars[i];
-		}
+		this.chars = Arrays.copyOf(chars, chars.length);
 	}
 
 	public char charAt(int index) {
