@@ -3,7 +3,7 @@ package chapter09;
 public class Circle {
 	double radius = 1;
 
-	Circle() {
+	public Circle() {
 	}
 
 	Circle(double newRadius) {
