@@ -21,10 +21,10 @@ public class CreateLargeDataset {
 				salary = random.nextInt(30000) + 50000;
 				break;
 			case "associate":
-				salary = random.nextInt(60000) + 50000;
+				salary = random.nextInt(50000) + 60000;
 				break;
 			case "full":
-				salary = random.nextInt(75000) + 55000;
+				salary = random.nextInt(55000) + 75000;
 				break;
 			}
 			salary += (int) (Math.random() * 100) / 100.;
