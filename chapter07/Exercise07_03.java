@@ -14,12 +14,7 @@ public class Exercise07_03 {
 			if (a == 0) {
 				break;
 			}
-			for (int i = 0; i < numbers.length; i++) {
-				if (a == i + 1) {
-					numbers[i]++;
-					break;
-				}
-			}
+			numbers[a - 1]++;
 
 		}
 		for (int i = 0; i < numbers.length; i++) {
