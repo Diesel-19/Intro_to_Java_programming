@@ -20,7 +20,10 @@ public class Exercise08_20 {
 
 		while (gameStatus(red, yellow, height) == -1) {
 			System.out.println("Drop a red disk at column (0-6)");
-			int column = input.nextInt();
+			int column = 7;
+			while (column < 0 || 6 < column) {
+				column = input.nextInt();
+			}
 			red[ROW - height[column] - 1][column] = true;
 			height[column]++;
 			printBoard(red, yellow);
