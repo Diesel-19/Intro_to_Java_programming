@@ -32,7 +32,9 @@ public class Exercise08_20 {
 			}
 
 			System.out.println("Drop a yellow disk at column (0-6)");
-			column = input.nextInt();
+			while (column < 0 || 6 < column) {
+				column = input.nextInt();
+			}
 			yellow[ROW - height[column] - 1][column] = true;
 			height[column]++;
 			printBoard(red, yellow);
