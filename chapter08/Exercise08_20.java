@@ -32,6 +32,7 @@ public class Exercise08_20 {
 			}
 
 			System.out.println("Drop a yellow disk at column (0-6)");
+			column = 7;
 			while (column < 0 || 6 < column) {
 				column = input.nextInt();
 			}
