@@ -5,7 +5,8 @@ public class Exercise01_02 {
 		int i = 0;
 		while (i < 5) {
 			System.out.println("Welcome to Java");
-			i++;
+			
+\* (i++=i+1) *\			i++;
 		}
 	}
 
